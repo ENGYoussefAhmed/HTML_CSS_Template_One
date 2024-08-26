@@ -440,6 +440,24 @@ body {
     .about .about-content .col {
         text-align: center;
     }
+
+    .about .about-content .col-left::before {
+        display: none;
+    }
+
+    .about .about-content .col-right > p:first-child {
+        max-width: 350px;
+        font-size: 17px;
+        margin-left: 14px;
+    }
+
+    .about .about-content .col-right > p:last-child {
+        max-width: 340px;
+        font-size: 15px;
+        margin-left: 14px;
+    }
+
+    
 }
 /* end about */
 /* strat contact */
@@ -461,10 +479,12 @@ body {
     letter-spacing: -2px;
     font-weight: 800;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 
 .contact .contant-contact h3 {
+    text-align: center;
     font-size: 35px;
     color: var(--main-color);
     letter-spacing: -2px;
@@ -475,7 +495,7 @@ body {
 
 .contact .contant-contact div {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-left: 70px;
     margin-top: 13px;
     flex-direction: row;
@@ -491,6 +511,35 @@ body {
     margin-right: 30px;
     font-size: 25px;
     color: var(--secandry);
+}
+
+@media (max-width:767px) {
+    .contact .contant-contact h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .contact .contant-contact h3 {
+        font-size: calc(35px / 2);
+        padding-left: 0;
+        font-weight: 700;
+    }
+
+    .contact .contant-contact {
+        padding-left: 0px;
+
+    }
+
+    .contact .contant-contact div  {
+        display: flex;
+        justify-content: start;
+        margin-left: 40px;
+    }
+
+    .contact .contant-contact div > div {
+        margin-right: 0;
+        margin-left: 20px;
+    }
 }
 /* end contact */
 /* start footer */
